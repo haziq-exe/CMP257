@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="styles.css">
+        <title>AUS CAMPUS CONNECT</title>
+    </head>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="homepage.html">AUS CAMPUS CONNECT</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="homepage.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="submitEvent.html">Submit Event</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header> 
+    <body>
+        <h2>Submit an Event</h2>
+        <form action="mailto:admin@auscampusconnect.com" method="post" class="container">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="eventNameID">Event Name:<span>*</span></label>
+                    <input type="text" name="eventName" id="eventNameID" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="dateNameID">Date:<span>*</span></label>
+                    <input type="date" name="dateName" id="dateNameID" class="form-control" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="timeNameID">Time:</label>
+                    <input type="time" name="timeName" id="timeNameID" class="form-control">
+                </div>
+                <div class="col-md-6">
+                    <label for="locNameID">Location:</label>
+                    <input type="text" name="locName" id="locNameID" class="form-control">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-12">
+                    <label for="descNameID">Event Description:</label>
+                    <textarea name="descName" id="descNameID" class="form-control"></textarea>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="orgNameID">Organizer Name:</label>
+                    <input type="text" name="orgName" id="orgNameID" class="form-control">
+                </div>
+                <div class="col-md-6">
+                    <label for="EorgNameID">Organizer Email:</label>
+                    <input type="text" name="EorgName" id="EorgNameID" class="form-control">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label>Is this event open to all students?</label>
+                    <div>
+                        <input type="radio" name="openToAll" id="openYes" value="Yes">
+                        <label for="openYes">Yes</label>
+                        <input type="radio" name="openToAll" id="openNo" value="No">
+                        <label for="openNo">No</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label>What type of event is this?</label>
+                    <div>
+                        <input type="checkbox" name="eventType" id="workshop" class="eventType" value="Workshop">
+                        <label for="workshop">Workshop</label>
+                        <input type="checkbox" name="eventType" id="social" class="eventType" value="Social">
+                        <label for="social">Social</label>
+                        <input type="checkbox" name="eventType" id="sports" class="eventType" value="Sports">
+                        <label for="sports">Sports</label>
+                        <input type="checkbox" name="eventType" id="academic" class="eventType" value="Academic">
+                        <label for="academic">Academic</label>
+                        <input type="checkbox" name="eventType" id="otherType" class="eventType" value="Other">
+                        <label for="otherType">Other</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-12">
+                    <label for="department">Select the department hosting the event:</label>
+                    <select name="department" id="department" class="form-select">
+                        <option value="CEN">CEN</option>
+                        <option value="SBA">SBA</option>
+                        <option value="CAS">CAS</option>
+                        <option value="CAAD">CAAD</option>
+                        <option value="OSA">OSA</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-12">
+                    <input type="submit" value="Submit" id="submitID" class="btn btn-primary">
+                    <input type="reset" value="Reset" id="resetID" class="btn btn-secondary">
+                </div>
+            </div>
+        </form>
+        <br>
+        <a href="homepage.html">&larr; Back to Home</a>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    <footer>
+        <br>
+        <hr>
+        <small>
+            &copy: 2025 Aus Campus Connect
+            <br>
+            <a href="instagram.com">Instagram</a> |
+            <a href="facebook.com"> Facebook</a> |
+            <a href="twitter.com"> Twitter</a>
+        </small>
+    </footer>
+</html>
